@@ -1,0 +1,21 @@
+name: Close pull requests
+
+on:
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close:
+    if: github.repository == 'JMLR-Software/candle-shop'
+    runs-on: ubuntu-latest
+    steps:
+      - run: >
+          gh pr close "$PR" --repo "$REPO" --comment
+          "Thanks! This is the practice shop for undo.jmlr.dev. Merges happen in your own fork, so nothing needs to come back here."
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
