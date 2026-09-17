@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font: 18px/1.5 Georgia, "Times New Roman", serif;
+  color: #2b2118;
+  background: #f7efe3;
+}
+main {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0 0 .25rem;
+}
+h2 {
+  font-size: 1.2rem;
+  margin: 0 0 .25rem;
+}
+.candles {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 1rem;
+}
+.candles li {
+  background: #fffaf2;
+  border: 1px solid #e3d3bb;
+  border-radius: 6px;
+  padding: 1rem;
+}
+.candles p {
+  margin: 0;
+}
+.price {
+  font-weight: bold;
+  margin-top: .5rem;
+}
+form {
+  display: grid;
+  gap: .75rem;
+  margin: 1.5rem 0;
+}
+label {
+  display: grid;
+  gap: .25rem;
+}
+.remember {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+input[type="email"],
+input[type="password"] {
+  font: inherit;
+  padding: .5rem;
+  border: 1px solid #c9b59a;
+  border-radius: 4px;
+}
+button {
+  font: inherit;
+  padding: .6rem 1rem;
+  background: #a8651f;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#message:empty,
+#order:empty {
+  display: none;
+}
+#message {
+  color: #8a1f11;
+  margin: 0;
+}
+#order {
+  color: #2d6a2d;
+}
+.hint {
+  color: #6b5a47;
+  font-size: .95rem;
+}
+footer {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #6b5a47;
+  font-size: .9rem;
+  border-top: 1px solid #e3d3bb;
+}
