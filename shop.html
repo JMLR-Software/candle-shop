@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="shop-version" content="__VERSION__">
+<meta name="shop-message" content="__MESSAGE__">
 <title>The Candle Shop</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -30,6 +32,8 @@
   <button id="checkout" type="button">Checkout</button>
   <p id="order" role="status"></p>
 </main>
+<footer>The Candle Shop · version <span id="version">your copy</span></footer>
+<script src="version.js"></script>
 <script>
 document.getElementById("checkout").addEventListener("click", function () {
   document.getElementById("order").textContent = "Order placed. Thank you!";
