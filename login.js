@@ -4,7 +4,7 @@ var REMEMBER_KEY = "candle-shop-email";
 
 function loginFromForm(fields) {
   var email = (fields.email || "").trim();
-  var password = fields.pasword;
+  var password = fields.password;
   if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
     return { ok: true, message: "Welcome back." };
   }
